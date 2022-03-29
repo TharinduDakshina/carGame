@@ -1,0 +1,18 @@
+#display{
+    width: 500px;
+    height: 800px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: auto;
+    /* position: relative;
+    left: 28vw; */
+}
+
+#character{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    top: 700px;
+    left: 200px;
+}
