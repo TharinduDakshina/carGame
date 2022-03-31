@@ -3,21 +3,26 @@
     margin: 0;
 }
 
+body{
+    overflow: hidden;
+}
+
 #display{
     width: 500px;
     height: 800px;
     border: 2px solid black;
     border-radius: 15px;
     margin: auto;
+    box-sizing: border-box;
 }
 
 #character{
     width: 100px;
     height: 100px;
     background-color: blue;
-    position: relative;
-    top: 600px;
-    left: 200px;
+    position: absolute;
+    left: 572px;
+    top: 700px;
 }
 
 #block{
@@ -25,17 +30,35 @@
     height: 100px;
     background-color: black;
     position: relative;
-    /* left: 400px; */
     animation: runBlock 3s infinite ;
+    
+}
+
+#block2{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    position: relative;
+    left: 400px;
+    top: -100px;
+    animation: runBlock 6s infinite ;
 }
 
 @keyframes runBlock{
 
     0% {
-        top:0px;
+        top:-100px;
     }
 
     100% {
         top: 800px;
     }
+}
+
+#bottmHide{
+    width: 100vw;
+    height: 122px;
+    background-color: white;
+    position: absolute;
+    bottom:2px;
 }
