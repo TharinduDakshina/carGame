@@ -20,9 +20,9 @@ body{
     width: 100px;
     height: 100px;
     background-color: blue;
-    position: absolute;
-    left: 572px;
-    top: 700px;
+    position: relative;
+    left: 200px;
+    top: 493px;
 }
 
 #block{
