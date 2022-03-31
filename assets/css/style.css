@@ -24,4 +24,18 @@
     width: 100px;
     height: 100px;
     background-color: black;
+    position: relative;
+    /* left: 400px; */
+    animation: runBlock 3s infinite ;
+}
+
+@keyframes runBlock{
+
+    0% {
+        top:0px;
+    }
+
+    100% {
+        top: 800px;
+    }
 }
