@@ -16,6 +16,12 @@ body{
     box-sizing: border-box;
 }
 
+#display > div > img{
+    width: 97px;
+    height: 100px;
+    border-radius: 10px;
+}
+
 #character{
     width: 100px;
     height: 100px;
@@ -28,7 +34,7 @@ body{
 #block{
     width: 100px;
     height: 100px;
-    background-color: black;
+    /* background-color: black; */
     position: relative;
     animation: runBlock 3s infinite ;
     
@@ -37,7 +43,7 @@ body{
 #block2{
     width: 100px;
     height: 100px;
-    background-color: gray;
+    /* background-color: red; */
     position: relative;
     left: 400px;
     top: -100px;
