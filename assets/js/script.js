@@ -45,17 +45,17 @@ $("#block").on("animationiteration",function(){
 
 setInterval(function(){
     var characterLeft=parseInt(window.getComputedStyle(character).getPropertyValue("left"));
-    
+    console.log("characterLeft : "+characterLeft);
 
     var blockLeft=parseInt(window.getComputedStyle(block).getPropertyValue("left"));
 
-    
+    console.log("blockLeft : "+blockLeft);
     var blockTop=parseInt(window.getComputedStyle(block).getPropertyValue("top"));
 
-
+   /* console.log("blockTop : "+blockTop);*/
     var block2Left=parseInt(window.getComputedStyle(block2).getPropertyValue("left"));
 
-    
+
     var block2Top=parseInt(window.getComputedStyle(block2).getPropertyValue("top"));
 
     if( characterLeft==blockLeft && blockTop<700 && blockTop>600){
@@ -68,4 +68,4 @@ setInterval(function(){
         $("#block2").css("animation","none");
         $("#block").css("animation","none");
     }
-},10);
+},10000);

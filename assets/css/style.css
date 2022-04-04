@@ -14,6 +14,7 @@ body{
     border-radius: 15px;
     margin: auto;
     box-sizing: border-box;
+
 }
 
 #block > img,#block2 > img,#character > img{
@@ -26,9 +27,10 @@ body{
     width: 100px;
     height: 100px;
     /* background-color: blue; */
-    position: relative;
-    left: 200px;
-    top: 493px;
+    position: fixed;
+    left: 720px;
+    top: 686px;
+    top: 686px;
 }
 
 #block{
@@ -57,7 +59,7 @@ body{
     }
 
     100% {
-        top: 800px;
+        top: 1200px;
     }
 }
 
@@ -73,8 +75,8 @@ body{
 
 .road{
     width: 100px;
-    height: 800px;
-   /* display: block;*/
+    height: 2500px;
+    display: block;
     position: absolute;
     background-repeat: repeat-y;
     animation: road 5s linear infinite;
@@ -105,13 +107,22 @@ body{
 
 .roadImg{
     width: 100px;
-    height: 800px;
+    height: 100%;
     /* background-repeat:repeat-y ;
     animation: road 5s linear infinite; */
 }
 
+
+
 @keyframes road {
-    100%{
-        transform: translateY(800px);
+    0%{
+        top: 0;
     }
+
+    100%{
+        top: -800px;
+    }
+    /*100%{
+        transform: translateY(-500px);
+    }*/
 }
