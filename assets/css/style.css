@@ -122,3 +122,28 @@ body>section>img{
     }
 
 }
+
+#score{
+    width: 355px;
+    height: 104px;
+    background-color: #bcd062;
+    position: absolute;
+    top: 13px;
+    left: 1142px;
+    border-radius: 10px;
+}
+
+#score > h1,#score > span{
+    position: relative;
+    left: 15px;
+    top: 9px;
+    font-size: 53px;
+    font-weight: bold;
+    color: darkcyan;
+    display: inline-block;
+}
+
+#score > span{
+    left: 24px;
+    top: 13px;
+}

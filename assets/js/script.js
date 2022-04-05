@@ -58,6 +58,8 @@ setInterval(function(){
 
     var block2Top=parseInt(window.getComputedStyle(block2).getPropertyValue("top"));
 
+    $("#score>span").text(count);
+
     if( characterLeft==blockLeft && blockTop<700 && blockTop>600){
         console.log("true ");
         alert("Game Over . Score ---> "+count);
