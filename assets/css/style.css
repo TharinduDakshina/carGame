@@ -26,26 +26,21 @@ body{
 #character{
     width: 100px;
     height: 100px;
-    /* background-color: blue; */
-    position: fixed;
-    left: 720px;
-    top: 686px;
-    top: 686px;
+    position: relative;
+    left: 200px;
+    top: 493px;
 }
 
 #block{
     width: 100px;
     height: 100px;
-    /* background-color: black; */
     position: relative;
     animation: runBlock 3s infinite ;
-    
 }
 
 #block2{
     width: 100px;
     height: 100px;
-    /* background-color: red; */
     position: relative;
     left: 400px;
     top: -100px;
@@ -80,13 +75,6 @@ body{
     position: absolute;
     background-repeat: repeat-y;
     animation: road 5s linear infinite;
-    /* background-image: url("/assets/images/roadImage.jpg");
-    bottom: 0;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    
-     */
 }
 
 #display>div:nth-child(2){
@@ -122,7 +110,5 @@ body{
     100%{
         top: -800px;
     }
-    /*100%{
-        transform: translateY(-500px);
-    }*/
+
 }
