@@ -60,14 +60,28 @@ setInterval(function(){
 
     $("#score>span").text(count);
 
+    /*if (blockTop==characterLeft){
+        count++;
+    }*/
+
     if( characterLeft==blockLeft && blockTop<700 && blockTop>600){
         console.log("true ");
-        alert("Game Over . Score ---> "+count);
+
+        alert("Game Over . Score ---> "+count-1);
         $("#block").css("animation","none");
         $("#block2").css("animation","none");
-    }else if(characterLeft==block2Left && block2Top<700 && block2Top>500){
-        alert("Game Over . Score---> "+count);
+    }else{
+
+    }
+
+    if(characterLeft==block2Left && block2Top<700 && block2Top>500){
+        alert("Game Over . Score---> "+count-1);
         $("#block2").css("animation","none");
         $("#block").css("animation","none");
+    }else{
+        /*count++;*/
     }
 },10);
+
+var audio = new Audio('audio/backgroundSound.mp3');
+audio.play();
